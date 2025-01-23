@@ -1,87 +1,48 @@
-/* Reset styles */
-body, h1, h2, h3, p, ul, li, a {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #fff;
-    color: #000;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Header styles */
-  .header {
-    background-color: #000;
+}
+
+header {
+    background: #333;
     color: #fff;
     padding: 1rem 0;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .nav ul {
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-end;
-  }
-  
-  .nav a {
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  /* Section styles */
-  .section {
-    padding: 2rem 0;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .section h2 {
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-    border-bottom: 2px solid #000;
-    display: inline-block;
-  }
-  
-  .post {
-    margin-bottom: 1.5rem;
-  }
-  
-  .post h3 {
-    font-size: 1.5rem;
-  }
-  
-  .post p {
-    margin-top: 0.5rem;
-  }
-  
-  /* Footer styles */
-  .footer {
-    background-color: #000;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    margin-top: 2rem;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .nav ul {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-  }
-  
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
